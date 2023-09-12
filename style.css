@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+p{
+    padding: 20px;
+    font-size: large;
+    color: #222;
+}
+
+body{
+    background-color: #262a2f;
+    color: #333;
+    display: flex;
+    margin: 0px auto 0;
+}
+
+.search-box{
+    width: 600px;
+    background: #fff;
+    margin: 50px 25px 0;
+    border-radius: 5px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;   
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+::placeholder{
+    color: #555;
+}
+
+.card-list ul,
+.result-box ul{
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+
+.card-list ul li,
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.result-box ul li:hover{
+    background-color: #e9f3ff;
+}
+
+.card-list ul li:hover{
+    background-color: rgb(255, 244, 224);
+}
+
+.result-box{
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+
+/* ---- Custom Scrollbar ---- */
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #d1e5ff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#642bff, #ff22e6);
+    border-radius: 25px;
+}
+
+/* ----------- Make image appear on the right side of it ----------- */
+
+.card-list ul li,
+.result-box ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-list ul li img,
+.result-box ul li img {
+    margin-right: 0;
+    width: 50px;
+    height: 50px;
+}
+  
+/* ----- cards on the right side ----- */
+
+.card{
+    width: 600px;
+    background: #ffffff;
+    border-radius: 5px;
+    margin: 50px auto 0;
+}
+
+.card-list{
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.export{
+    display: flex;
+    align-items: center;
+}
+
+.export button{
+    margin: 0 0 0 21em;
+    border-color: transparent;
+    background-color: #ff2b2b;
+    border-radius: 25px;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
